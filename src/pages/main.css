@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Idroid';
+    src: url(../utils/font/idroid.otf);
+}
+
+body{
+    background-color: #e8cfbcca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to bottom, #008000, #003c00);
+    color: white;
+}
+
+header > h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0px 15px 0px;
+}
+
+header > p{
+    font-size: 22px;
+    text-align: center;
+}
+
+nav{
+    font-size: 20px;
+}
+
+nav > p{
+    margin: 15px 25px;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 3px 20px;
+}
+
+section > p {
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+section > h2 {
+    padding: 3px 0px 3px 15px;
+}
+
+section > picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+a{
+    background-color: #84f684;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 3px;
+}
+
+ul {
+    list-style-position: outside;
+    padding-inline-start: 25px;
+    columns: 2;
+}
+
+ul > li{
+    position: relative;
+    padding: 0px;
+}
+
+footer{
+    background-color: rgb(33, 33, 33);
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    text-align: center;
+    width: 85%;
+}
+
+.gradient-color{
+    background: linear-gradient(to right, rgba(50, 239, 50, 0.504), white);
+}
+
+.font-idroid{
+    font-family: 'Idroid', Arial, Helvetica, sans-serif;
+    color: #107210;
+}
+
+.box-conteiner-title{
+    font-size: 28px;
+    background-color: green; 
+    color: white; 
+    border: 10px solid green;
+    border-radius: 18px 18px 0px 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.box-conteiner{
+    background-color: #86d086;
+    border-radius: 0px 0px 18px 18px;
+    margin: 0px;
+}
+
+.box-conteiner-list{
+    display: flex;
+    flex-wrap: nowrap; 
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.box-conteiner-list > ul{
+    flex: 50%;
+}
+
+.video-conteiner{
+    background-color: #003c00;
+    align-items: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-video{
+    position: inherit;
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5px;
+}
+
+.box-section{
+    width: 80%;
+}
+
+a:hover{
+    background-color: #589a58;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 100%) {
+    
+    .responsive-image {
+        width: 100%;
+        height: 100%;
+        max-width: 800px;
+        max-height: 266px;
+    }
+
+    .responsive-video{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+/* Tela Media */
+@media (max-width: 1000px){
+    section > p{
+        font-size: 2.6vh;
+    }
+    a{
+        font-size: 2.5vh;
+    }
+    .box-conteiner-list{
+        font-size: 2vw;
+    }
+}
+
+/* Tela Pequena */
+@media (max-width: 800px){
+    section > p{
+        font-size: 2.3vh;
+    }
+    a{
+        font-size: 2.2vh;
+    }
+    footer{
+        font-size: 2.8vw;
+    }
+    .box-section{
+        width: 90%;
+    }
+    .box-conteiner > p{
+        font-size: 2.2vh;
+    }
+    .box-conteiner-list{
+        font-size: 2.5vw;
+        padding: 10px 0px 0px 0px;
+    }
+}
+
